@@ -4,10 +4,9 @@
 #include <WiFiClientSecure.h>
 #include <UniversalTelegramBot.h>
 
-// Wifi network station credentials
 #define WIFI_SSID "realme C25s"
 #define WIFI_PASSWORD "code787898"
-// Telegram BOT Token (Get from Botfather)
+
 #define BOT_TOKEN "6729583393:AAE_gWML24xzK30KpTMdVMcGyU1-4YXS_u0"
 
 const unsigned long BOT_MTBS = 100; // mean time between scan messages
@@ -34,8 +33,7 @@ void handleNewMessages(int numNewMessages)
   }
 }
 
-void setup()
-{
+void setup(){
   Serial.begin(115200);
   Serial.println();
 
@@ -44,8 +42,7 @@ void setup()
   Serial.print(WIFI_SSID);
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   secured_client.setCACert(TELEGRAM_CERTIFICATE_ROOT); // Add root certificate for api.telegram.org
-  while (WiFi.status() != WL_CONNECTED)
-  {
+  while (WiFi.status() != WL_CONNECTED){
     Serial.print(".");
     delay(500);
   }
