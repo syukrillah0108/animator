@@ -1,4 +1,4 @@
-/sapopoe 💓
+/jantungan 💓
 /kapal ✈️
 /alarmclock ⏰️
 /angel 😇
