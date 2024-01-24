@@ -1,79 +1,32 @@
 #include <Arduino.h>
-#include <base.h>
-#include <WiFi.h>
-#include <WiFiClientSecure.h>
-#include <UniversalTelegramBot.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+#include <animator.h>
 
-#define WIFI_SSID "realme C25s"
-#define WIFI_PASSWORD "code787898"
+#define SCREEN_I2C_ADDR 0x3C // or 0x3D
+#define SCREEN_WIDTH 128     // OLED display width, in pixels
+#define SCREEN_HEIGHT 64     // OLED display height, in pixels
+#define OLED_RST_PIN -1      // Reset pin (-1 if not available)
 
-#define BOT_TOKEN "6729583393:AAE_gWML24xzK30KpTMdVMcGyU1-4YXS_u0"
+Adafruit_SSD1306 display(128, 64, &Wire, OLED_RST_PIN);
 
-const unsigned long BOT_MTBS = 100; // mean time between scan messages
+#define FRAME_DELAY (42)
+#define FRAME_WIDTH (64)
+#define FRAME_HEIGHT (64)
 
-WiFiClientSecure secured_client;
-UniversalTelegramBot bot(BOT_TOKEN, secured_client);
-unsigned long bot_lasttime;          // last time messages' scan has been done
-bool Start = false;
+#define FRAME_COUNT (28)
+const byte (*picture)[512] = alarm_clock;
 
-void handleNewMessages(int numNewMessages)
-{
-  Serial.println("handleNewMessages");
-  Serial.println(String(numNewMessages));
-
-  for (int i = 0; i < numNewMessages; i++)
-  {
-    String chat_id = bot.messages[i].chat_id;
-    String text = bot.messages[i].text;
-
-    if (text == "/start")
-    {
-      bot.sendMessage(chat_id, welcome);
-    }
-  }
+void setup() {
+  display.begin(SSD1306_SWITCHCAPVCC, SCREEN_I2C_ADDR);
 }
 
-void setup(){
-  Serial.begin(115200);
-  Serial.println();
-
-  // attempt to connect to Wifi network:
-  Serial.print("Connecting to Wifi SSID ");
-  Serial.print(WIFI_SSID);
-  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
-  secured_client.setCACert(TELEGRAM_CERTIFICATE_ROOT); // Add root certificate for api.telegram.org
-  while (WiFi.status() != WL_CONNECTED){
-    Serial.print(".");
-    delay(500);
-  }
-  Serial.print("\nWiFi connected. IP address: ");
-  Serial.println(WiFi.localIP());
-
-  Serial.print("Retrieving time: ");
-  configTime(0, 0, "pool.ntp.org"); // get UTC time via NTP
-  time_t now = time(nullptr);
-  while (now < 24 * 3600)
-  {
-    Serial.print(".");
-    delay(100);
-    now = time(nullptr);
-  }
-  Serial.println(now);
-}
-
-void loop()
-{
-  if (millis() - bot_lasttime > BOT_MTBS)
-  {
-    int numNewMessages = bot.getUpdates(bot.last_message_received + 1);
-
-    while (numNewMessages)
-    {
-      Serial.println("got response");
-      handleNewMessages(numNewMessages);
-      numNewMessages = bot.getUpdates(bot.last_message_received + 1);
-    }
-
-    bot_lasttime = millis();
-  }
+int frame = 0;
+void loop() {
+  display.clearDisplay();
+  display.drawBitmap(32, 0, picture[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+  display.display();
+  frame = (frame + 1) % FRAME_COUNT;
+  delay(FRAME_DELAY);
 }
