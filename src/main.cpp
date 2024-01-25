@@ -3,6 +3,8 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 #include <animator.h>
+#include <condition.h>
+
 
 #define SCREEN_I2C_ADDR 0x3C // or 0x3D
 #define SCREEN_WIDTH 128     // OLED display width, in pixels
