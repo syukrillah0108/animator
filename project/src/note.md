@@ -40,7 +40,9 @@
 /surat_cinta 💌
 /biwirrr 👄
 /ngopii ☕️
-/anis 🤓☝️
+/anies 🤓☝️
+/prabowo
+/ganjar
 /okehhh 👌
 /dahbukaa 
 /Tetriss 

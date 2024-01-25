@@ -225,8 +225,11 @@ void loop() {
   }else if (pesan == "/enaknyooo!!"){
     display.drawBitmap(32, 0, yummy[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
+  }else if (pesan == "/prabowo"){
+    display.drawBitmap(32, 0, two_finger[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+  }else if (pesan == "/ganjar"){
+    display.drawBitmap(32, 0, three_finger[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
   }
-
   display.display();
   frame = (frame + 1) % FRAME_COUNT;
   delay(FRAME_DELAY);
