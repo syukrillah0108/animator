@@ -30,50 +30,50 @@ void loop() {
   }
   display.clearDisplay();
 
-  if (pesan == "/jantungan"){
-    display.drawBitmap(32, 0, jantungan[frame], FRAME_WIDTH, FRAME_HEIGHT, 1); 
+  if (pesan == "activity"){
+    display.drawBitmap(32, 0, activity[frame], FRAME_WIDTH, FRAME_HEIGHT, 1); 
 
-  }else if (pesan == "/kapal"){
-    display.drawBitmap(32, 0, kapal[frame], FRAME_WIDTH, FRAME_HEIGHT, 1); 
+  }else if (pesan == "aircraft"){
+    display.drawBitmap(32, 0, aircraft[frame], FRAME_WIDTH, FRAME_HEIGHT, 1); 
 
-  }else if (pesan == "/alarmclock"){
-    display.drawBitmap(32, 0, alarmclock[frame], FRAME_WIDTH, FRAME_HEIGHT, 1); 
+  }else if (pesan == "alarm_clock"){
+    display.drawBitmap(32, 0, alarm_clock[frame], FRAME_WIDTH, FRAME_HEIGHT, 1); 
 
-  }else if (pesan == "/angel"){
+  }else if (pesan == "angel"){
     display.drawBitmap(32, 0, angel[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
-  }else if (pesan == "/beatinghearts"){
-    display.drawBitmap(32, 0, beatinghearts[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+  }else if (pesan == "beating_hearts"){
+    display.drawBitmap(32, 0, beating_hearts[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
   
-  }else if (pesan == "/bolu"){
-    display.drawBitmap(32, 0, bolu[frame], FRAME_WIDTH, FRAME_HEIGHT, 1); 
+  }else if (pesan == "birthday_cake"){
+    display.drawBitmap(32, 0, birthday_cake[frame], FRAME_WIDTH, FRAME_HEIGHT, 1); 
 
-  }else if (pesan == "/senyum_palsu"){
-    display.drawBitmap(32, 0, senyum_palsu[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+  }else if (pesan == "blushing"){
+    display.drawBitmap(32, 0, blushing[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
-  }else if (pesan == "bow"){ //?
+  }else if (pesan == "bow"){
     display.drawBitmap(32, 0, bow[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
-  }else if (pesan == "/paeh_hate"){
-    display.drawBizzztmap(32, 0, paeh_hate[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+  }else if (pesan == "broken_heart"){
+    display.drawBizzztmap(32, 0, broken_heart[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
-  }else if (pesan == "/car"){
+  }else if (pesan == "car"){
     display.drawBitmap(32, 0, car[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
-  }else if (pesan == "/cassette"){
+  }else if (pesan == "cassette"){
     display.drawBitmap(32, 0, cassette[frame], FRAME_WIDTH, FRAME_HEIGHT, 1); 
 
-  }else if (pesan == "/meng"){
-    display.drawBitmap(32, 0, meng[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+  }else if (pesan == "cat_meow"){
+    display.drawBitmap(32, 0, cat_meow[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
-  }else if (pesan == "/baed"){
-    display.drawBitmap(32, 0, baed[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+  }else if (pesan == "confused"){
+    display.drawBitmap(32, 0, confused[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
-  }else if (pesan == "/so-kerencool"){
-    display.drawBitmap(32, 0, so-keren[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+  }else if (pesan == "cool"){
+    display.drawBitmap(32, 0, cool[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
-  }else if (pesan == "/ceurik"){
-    display.drawBitmap(32, 0, ceurik[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+  }else if (pesan == "crying"){
+    display.drawBitmap(32, 0, crying[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
   }else if (pesan == "customer_insight"){
     display.drawBitmap(32, 0, customer_insight[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
@@ -172,7 +172,7 @@ void loop() {
     display.drawBitmap(32, 0, page_under_construction[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
   }else if (pesan == "palm_scan"){
-    display.drawBitmap(32, 0, palm_scan[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+    display.drawBitmap(32, 0, angel[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
   }else if (pesan == "piggy_bank"){
     display.drawBitmap(32, 0, piggy_bank[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
@@ -208,25 +208,25 @@ void loop() {
     display.drawBitmap(32, 0, tongue_out[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
   }else if (pesan == "torrential_rain_weather"){
-    display.drawBitmap(32, 0, torrential_rain_weather[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+    display.drawBitmap(32, 0, angel[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
   }else if (pesan == "vomited"){
-    display.drawBitmap(32, 0, vomited[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+    display.drawBitmap(32, 0, angel[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
   }else if (pesan == "walk"){
-    display.drawBitmap(32, 0, walk[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+    display.drawBitmap(32, 0, angel[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
   }else if (pesan == "wash_your_hands"){
-    display.drawBitmap(32, 0, wash_your_hands[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+    display.drawBitmap(32, 0, angel[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
   }else if (pesan == "wifi_search"){
-    display.drawBitmap(32, 0, wifi_search[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+    display.drawBitmap(32, 0, angel[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
   }else if (pesan == "wink"){
-    display.drawBitmap(32, 0, wink[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+    display.drawBitmap(32, 0, angel[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
   }else if (pesan == "yummy"){
-    display.drawBitmap(32, 0, yummy[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
+    display.drawBitmap(32, 0, angel[frame], FRAME_WIDTH, FRAME_HEIGHT, 1);
 
   }
 
