@@ -1,4 +1,9 @@
-String pesan = "0"; 
+#include <iostream>
+
+using byte = unsigned char;  
+
+int main() {
+    std::string pesan = "0";
 
 if (pesan == "activity"){
     const byte (*picture)[512] = activity;  
@@ -135,6 +140,22 @@ if (pesan == "activity"){
 }else if (pesan == "yummy"){
 
 }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
