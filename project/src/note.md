@@ -15,7 +15,7 @@
 /ceurik 😭
 /ide 💡
 /cuaca-bandung ⛅
-/linglung 😵
+/beban_hidup 😵
 /ngalukis 🎨
 /diselingkuhin_ayank 😩
 /terkejot 😳
@@ -24,6 +24,7 @@
 /scan_benget 
 /KB(keluarga_bencana) 👪
 /beulem_hate ❤️🔥
+/alur
 /gajah_terbang 🦋🐘
 /jurig 👻
 /buat_dia 💝
@@ -32,31 +33,32 @@
 /panah_asmara 💘
 /cinta 💗
 /imah 🏠
-/muahhh 💋
-/ucuu 🧸
+/wahhhh 😍
+/kawaii 🧸
 /kiss_panda 🐼👄
-/gemoyy 😂
+/ngakakkkk😂
 /surat_cinta 💌
-/lipstik 💄
-/prabowo 🤏✌️
-/mug ☕️
+/biwirrr 👄
+/ngopii ☕️
 /anis 🤓☝️
-/okeh 👌
-/open_sign
-/ngepet 🐽
+/okehhh 👌
+/dahbukaa 
+/Tetriss 
+/celengan_celeng🐖
 /tokai 💩
-/puzzle 🧩
+/bingungg🤷
 /qr_code
-/reddit
-/rocket 🚀
-/terkejot 🤯
-/jempe siah 🤫
+/robot🤖
+/roket 🚀
+/reuwas 🤯
+/jempe_siah 🤫
 /sarekeun 😴
+/ntehhh🍵
 /belelan_ahhk 😝
 /hujan_ngabred ⛈️
 /rujit_ihk 🤮
 /lelempangan 🚶‍♂️
 /cuci_tangan 💦👌
-/wifi
+/wifi📶
 /kekedipan 😉
 /enaknyooo!! 😋
